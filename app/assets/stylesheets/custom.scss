@@ -1,0 +1,110 @@
+.navbar{
+  margin-bottom: 0;
+}
+p.wrap {
+  word-wrap: break-word;
+}
+.top-icon{
+  font-size: 100px;
+  color: white;
+}
+div.relative {
+    position: relative;
+}
+div.absolute {
+  position: absolute;
+  bottom: 10%;
+}
+.hero {
+  height: 100vh;
+  background:url(/img/top.JPG) center center / cover no-repeat;
+  z-index: 0;
+  overflow: hidden;
+}
+.hero:before{
+  content: '';
+  background: inherit;/*.bgImageで設定した背景画像を継承する*/
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  position: absolute;
+  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;/*重なり順序を一番下にしておく*/
+}
+.hero h1 {
+  color: white;
+}
+.hero p {
+  color: white;
+}
+.toiawase {
+  background-color: #c0392b;
+  color: #ecf0f1;
+}
+.btn-ghost {
+  background: transparent;
+}
+.btn-ghost.btn-default {
+  color: #777;
+}
+
+.btn-ghost.btn-primary {
+  color: #337ab7;
+}
+
+.btn-ghost.btn-success {
+  color: #5cb85c;
+}
+
+.btn-ghost.btn-info {
+  color: #5bc0de;
+}
+
+.btn-ghost.btn-warning {
+  color: #f0ad4e;
+}
+
+.btn-ghost.btn-danger {
+  color: #d9534f;
+}
+.btn-ghost.btn-primary:hover,
+.btn-ghost.btn-success:hover,
+.btn-ghost.btn-info:hover,
+.btn-ghost.btn-warning:hover,
+.btn-ghost.btn-danger:hover {
+  color: #fff;
+}
+.btn-ghost.btn-white {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-ghost.btn-white:hover {
+  color: #333;
+  background: #fff;
+}
+
+.shrikhand {
+  font-family: 'Shrikhand', cursive;
+}
+.chewy {
+  font-family: 'Chewy', cursive;
+}
+.permanent{
+  font-family: 'Permanent Marker', cursive;
+}
+.Rammetto{
+  font-family: 'Rammetto One', cursive;
+}
+.Mogra{
+  font-family: 'Mogra', cursive;
+}
+.itim{
+  font-family: 'Itim', cursive;
+}
